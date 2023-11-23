@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery with Jump Points</title>
+    <style>
+        body {
+            background-color: rgb(70, 70, 70);
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: ;
+        }
+        .nav-button {
+  /* Your styling here */
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation at the top -->
+
+<!-- Group 1 -->
+<a id="group1"></a>
+<button onclick="goToGroup('group1')">Group 1</button>
+
+<!-- Your first 30 images here -->
+
+<!-- Bottom of Group 1 -->
+<a href="#group2">Next 30 Images</a>
+<a href="#group1">Back to Top of Group 1</a>
+
+<!-- Group 2 -->
+<a id="group2"></a>
+<button onclick="goToGroup('group2')">Group 2</button>
+
+<!-- Your next 30 images here -->
+
+<script>function goToGroup(groupId) {
+    location.href = '#' + groupId;
+  }
+  </script>
+</body>
+</html>
